@@ -1,0 +1,43 @@
+body {
+    padding: 0;
+    margin: 0px;
+}
+
+.top {
+    width: 100%;
+}
+
+.banner_top {
+    width: 100%;
+    display: block;
+}
+
+.live_banner {
+    width: 100%;
+}
+
+.live {
+    width: 100%;
+    display: block;
+    margin-top: -5px;
+}
+
+.action_btn_holder {
+    margin-top: -70px;
+    text-align: center;
+}
+
+.btn_action {
+    font-size: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 40px;
+    color: #FFFFFF;
+}
+
+.arrow {
+    max-width: 100%;
+}

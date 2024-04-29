@@ -1,0 +1,229 @@
+body {
+    margin: 0px;
+    margin: 0px;
+}
+
+.title {
+    max-width: 100%;
+}
+
+.pin_point {
+    width: 5%;
+    display: none;
+    position: relative;
+}
+
+.gauteng_pin {
+    transition: 1s ease-in-out;
+}
+
+#limpompo_pin,
+#kwazulu_natal_pin,
+#western_cape_pin,
+#eastern_cape_pin,
+#northern_cape_pin,
+#free_state_pin,
+#mpumalanga_pin,
+#north_west_pin {
+    display: none;
+    transition: 1s ease-in-out;
+}
+
+#Gauteng,
+#Limpompo,
+#Kwazulu_natal,
+#Western_cape,
+#Eastern_cape,
+#Northern_cape,
+#Free_state,
+#Mpumalanga,
+#North_west {
+    cursor: pointer;
+    transition: .6s ease-in-out;
+}
+
+#Gauteng {
+    fill: rgb(196, 190, 190);
+}
+
+#Gauteng:hover,
+#Limpompo:hover,
+#Kwazulu_natal:hover,
+#Western_cape:hover,
+#Eastern_cape:hover,
+#Northern_cape:hover,
+#Free_state:hover,
+#Mpumalanga:hover,
+#North_west:hover {
+    cursor: pointer;
+    /* fill: rgb(196, 190, 190); */
+}
+
+.province_section {
+    background-image: url('./assets/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    text-align: center;
+    min-height: 90vh;
+    margin-top: -5px;
+}
+
+.title {
+    text-align: center;
+}
+
+.flex_grid {
+    display: flex;
+    flex-direction: row;
+}
+
+.cards {
+    width: 50%;
+}
+
+.map_container {
+    width: 50%;
+}
+
+svg {
+    max-width: 90%;
+}
+
+.gp_cards {
+    display: block;
+}
+
+.card {
+    max-width: 60%;
+    text-align: center;
+    margin: auto;
+}
+
+.glide__slide img {
+    max-width: 50%;
+}
+
+.cards_navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    padding-top: 20px;
+}
+
+.dots {
+    min-height: 15px;
+    width: 15px;
+    background-color: #707070;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: .9s ease-in-out;
+}
+
+.dots:hover {
+    background-color: #FFFFFF;
+}
+
+.active_dot {
+    background-color: #FFFFFF;
+}
+
+.glide__slides {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.d_container {
+    width: 100%;
+    text-align: left;
+}
+
+
+/* responsive */
+
+@media (max-width: 1564px) {
+    svg {
+        max-width: 90%;
+        height: 60vh;
+    }
+    .glide__slide img {
+        max-width: 60%;
+    }
+}
+
+@media (max-width: 1196px) {
+    svg {
+        max-width: 95%;
+        height: 50vh;
+    }
+    .glide__slide img {
+        max-width: 70%;
+    }
+}
+
+@media (max-width:914px) {
+    svg {
+        max-width: 95%;
+        height: 40vh;
+    }
+    .dynamic_title {
+        max-width: 80%;
+    }
+}
+
+@media (max-width:700px) {
+    .flex_grid {
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    .province_section {
+        background-image: none;
+    }
+    svg {
+        max-width: 95%;
+        height: 50vh;
+    }
+    .glide__slide img {
+        max-width: 90%!important;
+        width: 90%;
+    }
+    .cards {
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        background-color: #000000;
+        margin-top: -5px;
+    }
+    .map_container {
+        width: 100%;
+        text-align: center;
+    }
+    .d_container {
+        text-align: center;
+    }
+    .glide__slides {
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    .map_container {
+        background-image: url('./assets/bg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .title {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .dynamic_title {
+        max-width: 50%;
+    }
+    svg {
+        max-width: 95%;
+        height: 40vh;
+    }
+}

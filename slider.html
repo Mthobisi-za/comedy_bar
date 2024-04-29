@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./slider.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="slider_container">
+        <div class="view">
+            <div class="slide_skewed_view">
+                <div class="slider slide_three">
+                    <p class="slide_text_t">Slider 3</p>
+                </div>
+                <div class="slider slide_two">
+                    <p class="slide_text_t">Slider 2</p>
+                </div>
+                <div class="slider slide_one">
+                    <p class="slide_text_t">Slider 1</p>
+                </div>
+            </div>
+            <div class="navigation">
+                <span class="dots"></span>
+                <span class="dots"></span>
+                <span class="dots"></span>
+            </div>
+        </div>
+
+        <div class="slider_view">
+
+        </div>
+    </div>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var location = $('.slider_view').position();
+
+        function DisplayFirstOne() {
+            $('.slide_one').css({
+                'left': location.left + "px",
+                'top': location.top + "px",
+                'transform': 'skewY(0deg)'
+
+            })
+        }
+
+
+        console.log(location);
+    })
+</script>
+
+</html>
